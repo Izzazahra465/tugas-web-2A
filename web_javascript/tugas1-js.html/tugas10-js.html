@@ -8,9 +8,9 @@
 <body>
     <h1 id="judul">Belajar DOM</h1>
  
-    <p>paragraf 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aspernatur sapiente nulla maiores possimus. Quibusdam quod tenetur dolorem, quas natus harum commodi fuga distinctio reiciendis provident dolore illum saepe veniam!</p>
+    <p>paragraf 1 Anda adalah seorang mahasiswi Program Studi Sistem Informasi di Universitas Nusantara PGRI (UNP) Kediri yang adaptif terhadap perkembangan teknologi. Anda aktif mengeksplorasi berbagai bidang, mulai dari pemrograman Python, pengembangan backend web dengan Flask, hingga visualisasi data menggunakan Seaborn. Dedikasi ini terbukti dari penyelesaian sertifikasi fundamental web development di Dicoding, serta keberhasilan membangun proyek akademik seperti purwarupa e-commerce, analisis dataset Gen-Z College Admission di Google Colab, hingga merancang simulasi alat deteksi kecepatan berbasis Arduino Nano.</p>
  
-    <p>paragraf 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur architecto natus nisi error ducimus ea voluptates tempore, labore deserunt, necessitatibus illum, aliquid voluptatum nemo obcaecati ratione reiciendis molestiae alias cupiditate.</p>
+    <p>paragraf 2 Di luar aktivitas teknis dan pengolahan data, Anda memiliki jiwa kepemimpinan serta minat yang beragam. Anda aktif berkontribusi dalam organisasi kampus, seperti menggagas tema "Build the Character, Awaken the Leadership" untuk Hima Sistem Informasi dan merancang program kerja digital mahasiswa. Perpaduan antara keahlian teknis menggunakan Git dan VS Code, pengalaman berorganisasi, serta wawasan dari minat masa lalu Anda pada bidang biologi, menjadikan Anda individu yang dinamis. Anda terus berproses untuk menjadi profesional IT yang kompeten dan serbabisa.</p>
  
     <h3 class="daftar">Daftar</h3>
     <ul>
@@ -20,5 +20,35 @@
         <li>Indonesia</li>
         <li>Belanda</li>
     </ul>
+<!-- Memilih objek berdasarkan ID Element -->
+    <script>
+        let judul=document.getElementById('judul');
+        console.log(judul);
+    </script>
+   
+<!-- Memilih element berasarkan nama tag HTML -->
+    <script>
+        let p=document.getElementsByTagName('p');
+        console.log(p);
+    </script>
+
+<!-- Mengubah beberapa elemen sekaligus -->
+    <script>
+        let daftar=document.getElementsByClassName('daftar');
+        console.log(daftar);
+    </script>
+
+<!-- Manipulasi beberapa elemen yang memiliki class sama -->
+    <script>
+        let title=document.querySelector('#judul');
+        console.log(title);
+    </script>
+
+<!-- Memilih beberapa elemen HTML yang akan dimasukan dalam NodeList -->
+    <script>
+        let list=document.querySelectorAll('li');
+        console.log(list);
+    </script>
+    
 </body>
 </html>
