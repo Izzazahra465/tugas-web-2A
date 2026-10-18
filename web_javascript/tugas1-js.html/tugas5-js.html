@@ -6,15 +6,15 @@
     <title>Perulangan dalam java script</title>
 </head>
 <body>
-    <!-- Perulangan While -->
-     <script type="text/javascript">
-        var a = 0;
+    <!-- Perulangan Foreach -->
+    <script type="text/javascript">
+         document.write('<h2>Daftar Siswa</h2>');
 
-        while(a < 10) {
-            document.write('<p>Tulisan ini diulang 10 kali </p>');
+        var siswa = ['Andi', 'Budi', 'Caca', 'Deni', 'Eka'];
 
-            a+=1;
-        }
+        siswa.forEach(function(i) {
+            document.write('<p>' + i + '</p>');
+        });
      </script>
 </body>
 </html>
